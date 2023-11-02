@@ -36,7 +36,7 @@ resource "yandex_compute_instance" "vm" {
   }
 
   metadata = {
-    #user-data = "#cloud-config\nusers:\n  - name: ${var.vm_user}\n    groups: sudo\n    shell: /bin/bash\n    sudo: 'ALL=(ALL) NOPASSWD:ALL'\n    ssh-authorized-keys:\n      - ${file("${var.ssh_key_path}")}"
+    # user-data = "#cloud-config\nusers:\n  - name: ${var.vm_user}\n    groups: sudo\n    shell: /bin/bash\n    sudo: 'ALL=(ALL) NOPASSWD:ALL'\n    ssh-authorized-keys:\n      - ${file("${var.ssh_key_path}")}"
     user-data = templatefile("${path.module}/vm-config.yaml", {
       vm_user      = var.vm_user
       ssh_key_path = file(var.ssh_key_path)

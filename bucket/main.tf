@@ -1,28 +1,21 @@
 variable "zone" {
-  type = string
+  description = "зона"
+  type        = string
 }
 variable "folder_id" {
-  type = string
+  description = "id каталога"
+  type        = string
 }
-# variable "vm_image_family" {
-#   type = string
-# }
-# variable "vm_user" {
-#   type = string
-# }
-# variable "ssh_key_path" {
-#   type = string
-# }
-# variable "dns_zone" {
-#   type = string
-# }
+
 
 variable "sa_name" {
-  type = string
+  description = "service account name"
+  type        = string
 }
 
 variable "bucket_name" {
-  type = string
+  description = "bucket name"
+  type        = string
 }
 
 
