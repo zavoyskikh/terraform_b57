@@ -27,7 +27,7 @@ terraform {
     skip_region_validation      = true
     skip_credentials_validation = true
     access_key                  = "YCAJEURJsvB_kRb-TfJOxMULs"
-    secret_key                  = "YCPXO2GKfmGD1274YTZ5StVbHeJwzXY8-OsJ8FX3"
+    secret_key                  = "*****************************************"
   }
 }
 
